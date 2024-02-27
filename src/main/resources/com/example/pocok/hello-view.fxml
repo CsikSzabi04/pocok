@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<HBox spacing="10.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pocok.HelloController">
+   <children>
+      <Pane fx:id="pnJatek" prefHeight="788.0" prefWidth="788.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <VBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Label style="-fx-border-color: black;">
+               <graphic>
+                  <ImageView fx:id="ivKep" fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pocok1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label text="0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label text="00 / 00">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="0%">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+            <Button fx:id="btStop" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Stop">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>
